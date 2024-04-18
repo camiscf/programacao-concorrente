@@ -1,0 +1,34 @@
+Atividade 1
+
+TESTE 1: Valor de 'soma' = 140589
+TESTE 2: Valor de 'soma' = 100000
+TESTE 3: Valor de 'soma' = 100000
+TESTE 4: Valor de 'soma' = 102640
+TESTE 5: Valor de 'soma' = 112845
+TESTE 6: Valor de 'soma' = 110469
+TESTE 7: Valor de 'soma' = 100000
+TESTE 8: Valor de 'soma' = 112241
+TESTE 9: Valor de 'soma' = 100650
+TESTE 10 Valor de 'soma' = 100650
+
+1.3 Os valores não foram sempre dentro do valor esperado, que seria 200000, 
+porque acessam a memória compartilhada, então houve perda de incremento , ou até
+uma thread salvar um valor e outra modifica o valor e a thread quando voltar
+usa o soma antigo
+
+1.4 É possível sim, elas podem ter executado e não ter acessado simultaneamente
+
+Atividade 2
+2.2 O valor sempre foram dentro do esperado, por causa da exclusão
+mútua que bloqueia a seção críica enquanto uma thread esta usando e só
+devolve quando ela terminar e então outra thread vai acessar
+
+Atividade 3
+TESTE COM N=1000 e 1 thread
+0.00055
+
+TESTE COM N=1000 e 2 threads
+0.000541
+
+TESTE COM N=1000 e 4 threads 
+0.000653
