@@ -41,3 +41,26 @@ Tempo verificando primo:0.060700
 
 TESTE COM N=1000000 e 4 thread
 Tempo verificando primo:0.041054
+
+
+Teste com N = 1000
+1 thread:
+Speedup: ≈ 1
+Eficiência:  ≈ 1
+2 threads:
+Speedup:  ≈1.0166
+Eficiência:  ≈0.5083
+4 threads:
+Speedup:  ≈0.842
+Eficiência:  ≈0.2105
+Teste com N = 1000000
+1 thread:
+Speedup: ≈  0.099964
+Eficiência:  ≈ 1
+2 threads:
+Speedup:  ≈1.6477
+Eficiência:  ≈0.8239
+4 threads:
+Speedup:  ≈2.4364
+Eficiência:  ≈0.6091
+Esses cálculos mostram como o desempenho aumenta com o número de threads, mas também destacam a eficiência relativa de cada configuração, que pode ser afetada pelo overhead de gerenciamento de threads e pela natureza do problema paralelizável.
