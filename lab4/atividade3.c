@@ -48,8 +48,9 @@ int main(int argc, char *argv[]) {
     long long N = atoll(argv[1]);
     int numThreads = atoi(argv[2]);
 
-    pthread_t threads[N];
-    ThreadArgs threadArgs[N];
+    pthread_t *threads = malloc(numThreads * sizeof(pthread_t));
+    ThreadArgs *threadArgs = malloc(numThreads * sizeof(ThreadArgs));
+
     int totalCount = 0;
     long long blockSize = (N + numThreads - 1) / numThreads;
 
