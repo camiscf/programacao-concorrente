@@ -32,3 +32,12 @@ TESTE COM N=1000 e 2 threads
 
 TESTE COM N=1000 e 4 threads 
 0.000653
+
+TESTE COM N=1000000 e 1 thread
+Tempo verificando primo:0.099964
+
+TESTE COM N=1000000 e 2 thread
+Tempo verificando primo:0.060700
+
+TESTE COM N=1000000 e 4 thread
+Tempo verificando primo:0.041054
